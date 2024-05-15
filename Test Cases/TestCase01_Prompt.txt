@@ -1,0 +1,1 @@
+Create a streamlit application. Use the attached image for reference on how the app should look like.

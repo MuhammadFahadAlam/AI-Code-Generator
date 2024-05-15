@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Documentation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            height: 100vh;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .sidebar h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 10px 0;
+            color: #333;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            padding: 5px;
+            font-size: 14px;
+        }
+        .sidebar ul li.active {
+            background-color: #e0e0e0;
+        }
+        .main-content {
+            padding: 30px;
+            width: calc(100% - 200px);
+        }
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .main-content h2 {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .main-content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .important-note {
+            background-color: #ffffc7;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Get Started</h3>
+        <ul>
+            <li>Introduction</li>
+            <li>Quickstart</li>
+            <li>Models</li>
+            <li>Tutorials</li>
+            <li>Changelog</li>
+        </ul>
+        <h3>Capabilities</h3>
+        <ul>
+            <li>Text generation</li>
+            <li>Function calling</li>
+            <li>Embeddings</li>
+            <li>Fine-tuning</li>
+            <li>Image generation</li>
+            <li class="active">Vision</li>
+            <li>Text-to-speech</li>
+            <li>Speech-to-text</li>
+            <li>Moderation</li>
+        </ul>
+        <h3>Assistants</h3>
+        <ul>
+            <li>Overview</li>
+            <li>How Assistants work</li>
+            <li>Tools</li>
+        </ul>
+        <h3>Guides</h3>
+        <ul>
+            <li>Prompt engineering</li>
+            <li>Production best practices</li>
+        </ul>
+    </aside>
+    <div class="main-content">
+        <h1>Vision</h1>
+        <p>Learn how to use GPT-4 to understand images</p>
+        <h2>Introduction</h2>
+        <p>GPT-4 with Vision, sometimes referred to as GPT-4V or <code>gpt-4-vision-preview</code> in the API, allows the model to take in images and answer questions about them. Historically, language model systems have been limited by taking in a single input modality, text. For many use cases, this constrained the areas where models like GPT-4 could be used.</p>
+        <p>GPT-4 with vision is currently available to all developers who have access to GPT-4 via the <code>gpt-4-vision-preview</code> model and the Chat Completions API which has been updated to support image inputs. Note that the Assistants API does not currently support image inputs.</p>
+        <p>It is important to note the following:</p>
+        <ul>
+            <li>GPT-4 Turbo with vision may behave slightly differently than GPT-4 Turbo, due to a system message we automatically insert into the conversation</li>
+            <li>GPT-4 Turbo with vision is the same as the GPT-4 Turbo preview model and performs equally as well on text tasks but has vision capabilities added</li>
+            <li>Vision is just one of many capabilities the model has</li>
+        </ul>
+        <div class="important-note">
+            <p>Currently, GPT-4 Turbo with vision does not support the
